@@ -9,6 +9,7 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    @livewireStyles
 </head>
 
 <body style="background-color: #CCC">
@@ -31,6 +32,9 @@
                             <a class="nav-link" aria-current="page" href="{{ route('posts.index') }}">Posts</a>
                         </li>
                     @endcan
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="{{ route('books.index') }}">Livro de Advogados</a>
+                        </li>
                     @can('admin')
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -104,6 +108,8 @@
         @endif
       </script>  
 
+
+@livewireScripts
 
 </body>
 
